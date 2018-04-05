@@ -1,0 +1,148 @@
+* {
+	border-width:0;
+	margin:0;
+	padding:0;
+	background: inherit;
+  font:inherit;
+	color: #8F938F;
+}
+.main-toolbar{
+	margin:0;
+	padding:0;
+	height:48px;
+	width:100%;
+	background: #34302f;
+}
+body {
+	background: #2c2827;
+}
+.top-space{
+	height:2px;
+	background:#403b3a;
+}
+.noselect {
+   cursor: default;
+   -webkit-user-select: none;
+   -webkit-touch-callout: none;
+   -khtml-user-select: none;
+   -moz-user-select: none;
+   -ms-user-select: none;
+   -o-user-select: none;
+}
+
+.noselect:focus {
+   outline: none;
+}
+.toolbar-button{
+	display:inline-block;
+	text-align:center;
+  padding: 13px 15px;
+}
+.toolbar-button:hover:not(.active){
+	background-color:#403B3A;
+	border-bottom: 2px solid #3f5;
+	cursor:pointer;
+}
+.center {
+	background:#403b3a;
+	position:absolute;
+	top:50px;
+	left:0px;
+	bottom:50px;
+	width:100%;
+}
+.right-toolbar{
+	background:inherit;
+	float:right;
+}
+.file-tree{
+	float:left;
+	width:198px;
+	height:100%;
+	background: #232020;
+}
+.file-button{
+	background-color:#2C2827;
+	height:1.2em;
+}
+.file-button:hover:not(.active){
+	background-color:#403B3A;
+	height:4em;
+}
+#file-file{
+	overflow:hidden;
+}
+#file-folder{
+	float:right;
+}
+.file-space {
+	width:2px;
+	background:#403b3a;
+}
+.main-code {
+	position:absolute;
+	top:0px;
+	left:200px;
+	bottom:0;
+	right:0;
+	float:left;
+	display: -webkit-flex;
+	display: flex;
+	flex-direction:row;
+	overflow:inherit;
+}
+.text-render{
+	float:left;
+	display:inherit;
+	position:relative;
+	overflow-y:auto;
+	width:50%;
+	flex: 0 0 auto;
+	max-width:100%;
+	background: #2c2827;
+}
+.code-replace{
+	position:absolute;
+	padding:0px;
+	height:100%;
+	width:100%;
+}
+.splitter {
+	flex: 0 0 auto;
+	width: 18px;
+	background: url(../resources/images/splitter.png) center center no-repeat #403b3a;
+	min-height: 200px;
+	cursor: col-resize;
+}
+.cube-render{
+	background: #2c2827;
+	height:100%;
+	display:inline; 
+	float:right;
+	flex: 1 1 auto;
+}
+.compiled-commands{
+	position:absolute;
+	left:0;
+	bottom:0;
+	height:50px;
+	width:100%;
+	resize:none;
+	background: #47413f;
+	font-size: 0.75em;
+	overflow:auto;
+	white-space: pre;
+}
+.CodeMirror-simplescroll-horizontal div, .CodeMirror-simplescroll-vertical div {
+  position: absolute;
+  background: #8F938F;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  border: 0px;
+  border-radius: 4px;
+}
+.CodeMirror-scrollbar-filler, .CodeMirror-simplescroll-horizontal, .CodeMirror-simplescroll-vertical {
+  position: absolute;
+  z-index: 6;
+  background: #34302F;
+}
