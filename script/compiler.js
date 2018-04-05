@@ -1,4 +1,4 @@
-define([],function(){
+define(['mcscript'],function(mcscript){
   function compiler(compiled,editor){
     this.compiled = compiled;
     this.editor = editor;
@@ -7,9 +7,10 @@ define([],function(){
     this.compiled.text(this.output);
   }
   compiler.prototype = {
-    
+
     fancy: function(){
-      this.compiled.text(window.run.interface.editor.getValue());
+      window.run.interface.editor.getValue()
+      this.compiled.text("window.run.interface.editor.getValue()");
     },
     setGrid: function(){
       window.run.grid = this.grid;

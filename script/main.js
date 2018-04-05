@@ -1,6 +1,7 @@
 requirejs.config({
 	baseUrl: './script',
 	paths: {
+		mcscript: '../resources/library/mcscript',
 		crafty: '../resources/library/crafty',
 		jquery: '../resources/library/jquery',
 		jqueryresizable: '../resources/library/jquery-resizable',
@@ -15,11 +16,10 @@ requirejs.config({
 require([
 	'running',
 	'domReady',
-	'isoGrid',
 	'interface',
 	'filetree',
+	'mcscript',
 	'compiler',
-	'crafty',
 	'jquery',
 	'jqueryresizable',
 	'codemirror',
