@@ -1,5 +1,6 @@
 define(['mcscript'],function(mcscript){
   function compiler(compiled,editor){
+    console.log(mcscript);
     this.compiled = compiled;
     this.editor = editor;
     this.output = "";
@@ -8,12 +9,8 @@ define(['mcscript'],function(mcscript){
   }
   compiler.prototype = {
 
-    fancy: function(){
-      window.run.interface.editor.getValue()
-      this.compiled.text("window.run.interface.editor.getValue()");
-    },
-    setGrid: function(){
-      window.run.grid = this.grid;
+    compile: function(){
+      this.compiled.text(this.mcscript.parse(mcscript.TokenStream(mcscript.InputStream(window.run.interface.editor.getValue()))));
     }
   }
   return compiler;

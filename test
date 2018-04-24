@@ -1,0 +1,541 @@
+/dev
+├── autofs
+├── block
+│   ├── 8:0 -> ../sda
+│   ├── 8:1 -> ../sda1
+│   ├── 8:16 -> ../sdb
+│   ├── 8:17 -> ../sdb1
+│   ├── 8:18 -> ../sdb2
+│   ├── 8:2 -> ../sda2
+│   ├── 8:3 -> ../sda3
+│   ├── 8:32 -> ../sdc
+│   ├── 8:33 -> ../sdc1
+│   ├── 8:48 -> ../sdd
+│   └── 8:64 -> ../sde
+├── bsg
+│   ├── 1:0:0:0
+│   ├── 3:0:0:0
+│   ├── 5:0:0:0
+│   ├── 9:0:0:0
+│   └── 9:0:0:1
+├── btrfs-control
+├── bus
+│   └── usb
+│       ├── 001
+│       │   ├── 001
+│       │   └── 008
+│       ├── 002
+│       │   └── 001
+│       ├── 003
+│       │   ├── 001
+│       │   ├── 002
+│       │   ├── 004
+│       │   └── 009
+│       ├── 004
+│       │   ├── 001
+│       │   ├── 002
+│       │   └── 003
+│       ├── 005
+│       │   ├── 001
+│       │   └── 002
+│       └── 006
+│           └── 001
+├── char
+│   ├── 10:1 -> ../psaux
+│   ├── 10:183 -> ../hwrng
+│   ├── 10:184 -> ../cpu/microcode
+│   ├── 10:228 -> ../hpet
+│   ├── 10:229 -> ../fuse
+│   ├── 10:231 -> ../snapshot
+│   ├── 10:235 -> ../autofs
+│   ├── 10:54 -> ../rfkill
+│   ├── 10:55 -> ../vboxnetctl
+│   ├── 10:56 -> ../vboxdrvu
+│   ├── 10:57 -> ../vboxdrv
+│   ├── 10:58 -> ../memory_bandwidth
+│   ├── 10:59 -> ../network_throughput
+│   ├── 10:60 -> ../network_latency
+│   ├── 10:61 -> ../cpu_dma_latency
+│   ├── 10:62 -> ../lightnvm/control
+│   ├── 10:63 -> ../vga_arbiter
+│   ├── 1:1 -> ../mem
+│   ├── 1:11 -> ../kmsg
+│   ├── 116:1 -> ../snd/seq
+│   ├── 116:10 -> ../snd/controlC3
+│   ├── 116:11 -> ../snd/midiC3D0
+│   ├── 116:12 -> ../snd/controlC0
+│   ├── 116:13 -> ../snd/pcmC0D3p
+│   ├── 116:14 -> ../snd/pcmC0D7p
+│   ├── 116:15 -> ../snd/pcmC0D8p
+│   ├── 116:16 -> ../snd/pcmC0D9p
+│   ├── 116:17 -> ../snd/hwC0D0
+│   ├── 116:18 -> ../snd/controlC4
+│   ├── 116:19 -> ../snd/midiC4D0
+│   ├── 116:2 -> ../snd/controlC1
+│   ├── 116:3 -> ../snd/pcmC1D0p
+│   ├── 116:33 -> ../snd/timer
+│   ├── 116:4 -> ../snd/pcmC1D0c
+│   ├── 116:5 -> ../snd/pcmC1D1p
+│   ├── 116:6 -> ../snd/pcmC1D2c
+│   ├── 116:7 -> ../snd/hwC1D0
+│   ├── 116:8 -> ../snd/controlC2
+│   ├── 116:9 -> ../snd/pcmC2D0c
+│   ├── 1:3 -> ../null
+│   ├── 13:32 -> ../input/mouse0
+│   ├── 13:63 -> ../input/mice
+│   ├── 13:64 -> ../input/event0
+│   ├── 13:65 -> ../input/event1
+│   ├── 13:66 -> ../input/event2
+│   ├── 13:67 -> ../input/event3
+│   ├── 13:68 -> ../input/event4
+│   ├── 13:69 -> ../input/event5
+│   ├── 13:70 -> ../input/event6
+│   ├── 13:71 -> ../input/event7
+│   ├── 13:72 -> ../input/event8
+│   ├── 13:73 -> ../input/event9
+│   ├── 13:74 -> ../input/event10
+│   ├── 13:75 -> ../input/event11
+│   ├── 13:76 -> ../input/event12
+│   ├── 13:77 -> ../input/event13
+│   ├── 13:78 -> ../input/event14
+│   ├── 13:79 -> ../input/event15
+│   ├── 13:80 -> ../input/event16
+│   ├── 13:81 -> ../input/event17
+│   ├── 1:4 -> ../port
+│   ├── 14:50 -> ../midi3
+│   ├── 14:57 -> ../dmmidi3
+│   ├── 14:66 -> ../midi4
+│   ├── 14:73 -> ../dmmidi4
+│   ├── 1:5 -> ../zero
+│   ├── 1:7 -> ../full
+│   ├── 1:8 -> ../random
+│   ├── 180:0 -> ../usb/hiddev0
+│   ├── 189:0 -> ../bus/usb/001/001
+│   ├── 189:128 -> ../bus/usb/002/001
+│   ├── 189:256 -> ../bus/usb/003/001
+│   ├── 189:257 -> ../bus/usb/003/002
+│   ├── 189:259 -> ../bus/usb/003/004
+│   ├── 189:264 -> ../bus/usb/003/009
+│   ├── 189:384 -> ../bus/usb/004/001
+│   ├── 189:385 -> ../bus/usb/004/002
+│   ├── 189:386 -> ../bus/usb/004/003
+│   ├── 189:512 -> ../bus/usb/005/001
+│   ├── 189:513 -> ../bus/usb/005/002
+│   ├── 189:640 -> ../bus/usb/006/001
+│   ├── 189:7 -> ../bus/usb/001/008
+│   ├── 1:9 -> ../urandom
+│   ├── 226:0 -> ../dri/card0
+│   ├── 226:128 -> ../dri/renderD128
+│   ├── 242:0 -> ../ptp0
+│   ├── 243:0 -> ../pps0
+│   ├── 245:0 -> ../hidraw0
+│   ├── 245:1 -> ../hidraw1
+│   ├── 247:0 -> ../bsg/1:0:0:0
+│   ├── 247:1 -> ../bsg/3:0:0:0
+│   ├── 247:2 -> ../bsg/5:0:0:0
+│   ├── 247:3 -> ../bsg/9:0:0:0
+│   ├── 247:4 -> ../bsg/9:0:0:1
+│   ├── 250:0 -> ../rtc0
+│   ├── 254:0 -> ../gpiochip0
+│   ├── 254:1 -> ../gpiochip1
+│   ├── 29:0 -> ../fb0
+│   ├── 4:0 -> ../tty0
+│   ├── 4:1 -> ../tty1
+│   ├── 4:10 -> ../tty10
+│   ├── 4:11 -> ../tty11
+│   ├── 4:12 -> ../tty12
+│   ├── 4:13 -> ../tty13
+│   ├── 4:14 -> ../tty14
+│   ├── 4:15 -> ../tty15
+│   ├── 4:16 -> ../tty16
+│   ├── 4:17 -> ../tty17
+│   ├── 4:18 -> ../tty18
+│   ├── 4:19 -> ../tty19
+│   ├── 4:2 -> ../tty2
+│   ├── 4:20 -> ../tty20
+│   ├── 4:21 -> ../tty21
+│   ├── 4:22 -> ../tty22
+│   ├── 4:23 -> ../tty23
+│   ├── 4:24 -> ../tty24
+│   ├── 4:25 -> ../tty25
+│   ├── 4:26 -> ../tty26
+│   ├── 4:27 -> ../tty27
+│   ├── 4:28 -> ../tty28
+│   ├── 4:29 -> ../tty29
+│   ├── 4:3 -> ../tty3
+│   ├── 4:30 -> ../tty30
+│   ├── 4:31 -> ../tty31
+│   ├── 4:32 -> ../tty32
+│   ├── 4:33 -> ../tty33
+│   ├── 4:34 -> ../tty34
+│   ├── 4:35 -> ../tty35
+│   ├── 4:36 -> ../tty36
+│   ├── 4:37 -> ../tty37
+│   ├── 4:38 -> ../tty38
+│   ├── 4:39 -> ../tty39
+│   ├── 4:4 -> ../tty4
+│   ├── 4:40 -> ../tty40
+│   ├── 4:41 -> ../tty41
+│   ├── 4:42 -> ../tty42
+│   ├── 4:43 -> ../tty43
+│   ├── 4:44 -> ../tty44
+│   ├── 4:45 -> ../tty45
+│   ├── 4:46 -> ../tty46
+│   ├── 4:47 -> ../tty47
+│   ├── 4:48 -> ../tty48
+│   ├── 4:49 -> ../tty49
+│   ├── 4:5 -> ../tty5
+│   ├── 4:50 -> ../tty50
+│   ├── 4:51 -> ../tty51
+│   ├── 4:52 -> ../tty52
+│   ├── 4:53 -> ../tty53
+│   ├── 4:54 -> ../tty54
+│   ├── 4:55 -> ../tty55
+│   ├── 4:56 -> ../tty56
+│   ├── 4:57 -> ../tty57
+│   ├── 4:58 -> ../tty58
+│   ├── 4:59 -> ../tty59
+│   ├── 4:6 -> ../tty6
+│   ├── 4:60 -> ../tty60
+│   ├── 4:61 -> ../tty61
+│   ├── 4:62 -> ../tty62
+│   ├── 4:63 -> ../tty63
+│   ├── 4:64 -> ../ttyS0
+│   ├── 4:65 -> ../ttyS1
+│   ├── 4:66 -> ../ttyS2
+│   ├── 4:67 -> ../ttyS3
+│   ├── 4:7 -> ../tty7
+│   ├── 4:8 -> ../tty8
+│   ├── 4:9 -> ../tty9
+│   ├── 5:0 -> ../tty
+│   ├── 5:1 -> ../console
+│   ├── 5:2 -> ../ptmx
+│   ├── 7:0 -> ../vcs
+│   ├── 7:1 -> ../vcs1
+│   ├── 7:128 -> ../vcsa
+│   ├── 7:129 -> ../vcsa1
+│   ├── 7:130 -> ../vcsa2
+│   ├── 7:131 -> ../vcsa3
+│   ├── 7:132 -> ../vcsa4
+│   ├── 7:133 -> ../vcsa5
+│   ├── 7:134 -> ../vcsa6
+│   ├── 7:2 -> ../vcs2
+│   ├── 7:3 -> ../vcs3
+│   ├── 7:4 -> ../vcs4
+│   ├── 7:5 -> ../vcs5
+│   └── 7:6 -> ../vcs6
+├── console
+├── core -> /proc/kcore
+├── cpu
+│   └── microcode
+├── cpu_dma_latency
+├── cuse
+├── disk
+│   ├── by-id
+│   │   ├── ata-Samsung_SSD_850_EVO_1TB_S2RENX0HA13748T -> ../../sda
+│   │   ├── ata-Samsung_SSD_850_EVO_1TB_S2RENX0HA13748T-part1 -> ../../sda1
+│   │   ├── ata-Samsung_SSD_850_EVO_1TB_S2RENX0HA13748T-part2 -> ../../sda2
+│   │   ├── ata-Samsung_SSD_850_EVO_1TB_S2RENX0HA13748T-part3 -> ../../sda3
+│   │   ├── ata-WDC_WD10EZEX-00BN5A0_WD-WCC3F6JNVHUD -> ../../sdb
+│   │   ├── ata-WDC_WD10EZEX-00BN5A0_WD-WCC3F6JNVHUD-part1 -> ../../sdb1
+│   │   ├── ata-WDC_WD10EZEX-00BN5A0_WD-WCC3F6JNVHUD-part2 -> ../../sdb2
+│   │   ├── ata-WDC_WD10EZEX-60WN4A0_WD-WCC6Y5RNUT55 -> ../../sdc
+│   │   ├── ata-WDC_WD10EZEX-60WN4A0_WD-WCC6Y5RNUT55-part1 -> ../../sdc1
+│   │   ├── usb-Generic_STORAGE_DEVICE_000000001205-0:0 -> ../../sdd
+│   │   ├── usb-Generic_STORAGE_DEVICE_000000001205-0:1 -> ../../sde
+│   │   ├── wwn-0x50014ee2638ec072 -> ../../sdc
+│   │   ├── wwn-0x50014ee2638ec072-part1 -> ../../sdc1
+│   │   ├── wwn-0x50014ee2b6b451f3 -> ../../sdb
+│   │   ├── wwn-0x50014ee2b6b451f3-part1 -> ../../sdb1
+│   │   ├── wwn-0x50014ee2b6b451f3-part2 -> ../../sdb2
+│   │   ├── wwn-0x5002538d415dec14 -> ../../sda
+│   │   ├── wwn-0x5002538d415dec14-part1 -> ../../sda1
+│   │   ├── wwn-0x5002538d415dec14-part2 -> ../../sda2
+│   │   └── wwn-0x5002538d415dec14-part3 -> ../../sda3
+│   ├── by-label
+│   │   └── ARCH_201711 -> ../../sdc1
+│   ├── by-partuuid
+│   │   ├── 0b0fb6a0-f666-49d1-9213-8cfa0d0d2170 -> ../../sdb1
+│   │   ├── 3221b3e8-927d-4c18-a2f7-024afc578ae8 -> ../../sda3
+│   │   ├── 41900fa5-3d49-4d3e-a865-4316e36f8a4e -> ../../sdb2
+│   │   ├── 44b3a0a3-ae1b-4dff-b153-cb8ce2bf0003 -> ../../sdc1
+│   │   ├── 45566c6b-209d-4d82-81ee-64865a3a3077 -> ../../sda1
+│   │   └── 86b23144-fb71-4a74-8c6b-754600180a63 -> ../../sda2
+│   ├── by-path
+│   │   ├── pci-0000:03:00.1-ata-2 -> ../../sda
+│   │   ├── pci-0000:03:00.1-ata-2-part1 -> ../../sda1
+│   │   ├── pci-0000:03:00.1-ata-2-part2 -> ../../sda2
+│   │   ├── pci-0000:03:00.1-ata-2-part3 -> ../../sda3
+│   │   ├── pci-0000:03:00.1-ata-4 -> ../../sdb
+│   │   ├── pci-0000:03:00.1-ata-4-part1 -> ../../sdb1
+│   │   ├── pci-0000:03:00.1-ata-4-part2 -> ../../sdb2
+│   │   ├── pci-0000:03:00.1-ata-6 -> ../../sdc
+│   │   ├── pci-0000:03:00.1-ata-6-part1 -> ../../sdc1
+│   │   ├── pci-0000:25:00.0-usb-0:1.4:1.0-scsi-0:0:0:0 -> ../../sdd
+│   │   └── pci-0000:25:00.0-usb-0:1.4:1.0-scsi-0:0:0:1 -> ../../sde
+│   └── by-uuid
+│       ├── 132A-9B2F -> ../../sda1
+│       ├── 2017-11-01-08-25-48-00 -> ../../sdc
+│       ├── 3fa0664a-b08f-4380-ab79-37d974e11797 -> ../../sdc1
+│       ├── 4a94d75a-e58f-4b9e-bd70-bce6960dde36 -> ../../sda2
+│       ├── 7903d732-fd31-4b21-a894-411f7ad8749f -> ../../sdb1
+│       ├── 873e74f8-c249-4bcc-90e1-1d5ce002c993 -> ../../sdb2
+│       └── deb68c55-dbe9-45f0-b060-3c43f4c20a29 -> ../../sda3
+├── dmmidi3
+├── dmmidi4
+├── dri
+│   ├── by-path
+│   │   ├── pci-0000:28:00.0-card -> ../card0
+│   │   └── pci-0000:28:00.0-render -> ../renderD128
+│   ├── card0
+│   └── renderD128
+├── fb0
+├── fd -> /proc/self/fd
+├── full
+├── fuse
+├── gpiochip0
+├── gpiochip1
+├── hidraw0
+├── hidraw1
+├── hpet
+├── hugepages
+├── hwrng
+├── initctl -> /run/systemd/initctl/fifo
+├── input
+│   ├── by-id
+│   │   ├── usb-Logitech_G300s_Optical_Gaming_Mouse-event-mouse -> ../event3
+│   │   ├── usb-Logitech_G300s_Optical_Gaming_Mouse-if01-event-kbd -> ../event4
+│   │   └── usb-Logitech_G300s_Optical_Gaming_Mouse-mouse -> ../mouse0
+│   ├── by-path
+│   │   ├── pci-0000:03:00.0-usb-0:3:1.0-event-mouse -> ../event3
+│   │   ├── pci-0000:03:00.0-usb-0:3:1.0-mouse -> ../mouse0
+│   │   ├── pci-0000:03:00.0-usb-0:3:1.1-event-kbd -> ../event4
+│   │   ├── platform-eeepc-wmi-event -> ../event6
+│   │   ├── platform-i8042-serio-0-event-kbd -> ../event2
+│   │   └── platform-pcspkr-event-spkr -> ../event5
+│   ├── event0
+│   ├── event1
+│   ├── event10
+│   ├── event11
+│   ├── event12
+│   ├── event13
+│   ├── event14
+│   ├── event15
+│   ├── event16
+│   ├── event17
+│   ├── event2
+│   ├── event3
+│   ├── event4
+│   ├── event5
+│   ├── event6
+│   ├── event7
+│   ├── event8
+│   ├── event9
+│   ├── mice
+│   └── mouse0
+├── kmsg
+├── lightnvm
+│   └── control
+├── log -> /run/systemd/journal/dev-log
+├── loop-control
+├── mapper
+│   └── control
+├── mem
+├── memory_bandwidth
+├── midi3
+├── midi4
+├── mqueue
+├── net
+│   └── tun
+├── network_latency
+├── network_throughput
+├── null
+├── nvidia0
+├── nvidiactl
+├── nvidia-modeset
+├── port
+├── ppp
+├── pps0
+├── psaux
+├── ptmx
+├── ptp0
+├── pts
+│   ├── 2
+│   ├── 3
+│   ├── 4
+│   ├── 5
+│   ├── 6
+│   └── ptmx
+├── random
+├── rfkill
+├── rtc -> rtc0
+├── rtc0
+├── sda
+├── sda1
+├── sda2
+├── sda3
+├── sdb
+├── sdb1
+├── sdb2
+├── sdc
+├── sdc1
+├── sdd
+├── sde
+├── shm
+│   ├── i3-log-744
+│   ├── jack-1000-0
+│   ├── jack-1000-1
+│   ├── jack_default_1000_0
+│   ├── jack_sem.1000_default_a2j
+│   ├── jack_sem.1000_default_dbusapi
+│   ├── jack_sem.1000_default_freewheel
+│   ├── jack_sem.1000_default_jack_mixer
+│   ├── jack_sem.1000_default_PortAudio
+│   ├── jack_sem.1000_default_PulseAudio JACK Sink
+│   ├── jack_sem.1000_default_PulseAudio JACK Sink-01
+│   ├── jack_sem.1000_default_PulseAudio JACK Sink-02
+│   ├── jack_sem.1000_default_PulseAudio JACK Source
+│   ├── jack_sem.1000_default_PulseAudio JACK Source-01
+│   ├── jack_sem.1000_default_PulseAudio JACK Source-02
+│   ├── jack_sem.1000_default_qjackctl
+│   ├── jack_sem.1000_default_SunVox
+│   ├── jack_sem.1000_default_SunVox-01
+│   ├── jack_sem.1000_default_system
+│   └── jack-shm-registry
+├── snapshot
+├── snd
+│   ├── by-id
+│   │   ├── usb-AKAI_professional_LLC_LPK25-00 -> ../controlC4
+│   │   ├── usb-Logitech_Logitech_USB_Microphone-00 -> ../controlC2
+│   │   └── usb-___WORLDE_easy_control-00 -> ../controlC3
+│   ├── by-path
+│   │   ├── pci-0000:25:00.0-usb-0:1.1:1.0 -> ../controlC3
+│   │   ├── pci-0000:25:00.0-usb-0:1.2:1.0 -> ../controlC4
+│   │   ├── pci-0000:28:00.1 -> ../controlC0
+│   │   ├── pci-0000:29:00.3-usb-0:4:1.0 -> ../controlC2
+│   │   └── pci-0000:2a:00.3 -> ../controlC1
+│   ├── controlC0
+│   ├── controlC1
+│   ├── controlC2
+│   ├── controlC3
+│   ├── controlC4
+│   ├── hwC0D0
+│   ├── hwC1D0
+│   ├── midiC3D0
+│   ├── midiC4D0
+│   ├── pcmC0D3p
+│   ├── pcmC0D7p
+│   ├── pcmC0D8p
+│   ├── pcmC0D9p
+│   ├── pcmC1D0c
+│   ├── pcmC1D0p
+│   ├── pcmC1D1p
+│   ├── pcmC1D2c
+│   ├── pcmC2D0c
+│   ├── seq
+│   └── timer
+├── stderr -> /proc/self/fd/2
+├── stdin -> /proc/self/fd/0
+├── stdout -> /proc/self/fd/1
+├── tty
+├── tty0
+├── tty1
+├── tty10
+├── tty11
+├── tty12
+├── tty13
+├── tty14
+├── tty15
+├── tty16
+├── tty17
+├── tty18
+├── tty19
+├── tty2
+├── tty20
+├── tty21
+├── tty22
+├── tty23
+├── tty24
+├── tty25
+├── tty26
+├── tty27
+├── tty28
+├── tty29
+├── tty3
+├── tty30
+├── tty31
+├── tty32
+├── tty33
+├── tty34
+├── tty35
+├── tty36
+├── tty37
+├── tty38
+├── tty39
+├── tty4
+├── tty40
+├── tty41
+├── tty42
+├── tty43
+├── tty44
+├── tty45
+├── tty46
+├── tty47
+├── tty48
+├── tty49
+├── tty5
+├── tty50
+├── tty51
+├── tty52
+├── tty53
+├── tty54
+├── tty55
+├── tty56
+├── tty57
+├── tty58
+├── tty59
+├── tty6
+├── tty60
+├── tty61
+├── tty62
+├── tty63
+├── tty7
+├── tty8
+├── tty9
+├── ttyS0
+├── ttyS1
+├── ttyS2
+├── ttyS3
+├── uhid
+├── uinput
+├── urandom
+├── usb
+│   └── hiddev0
+├── userio
+├── vboxdrv
+├── vboxdrvu
+├── vboxnetctl
+├── vboxusb [error opening dir]
+├── vcs
+├── vcs1
+├── vcs2
+├── vcs3
+├── vcs4
+├── vcs5
+├── vcs6
+├── vcsa
+├── vcsa1
+├── vcsa2
+├── vcsa3
+├── vcsa4
+├── vcsa5
+├── vcsa6
+├── vfio
+│   └── vfio
+├── vga_arbiter
+├── vhci
+├── vhost-net
+├── vhost-vsock
+└── zero
+
+37 directories, 501 files

@@ -67,7 +67,7 @@ body {
 }
 .file-button:hover:not(.active){
 	background-color:#403B3A;
-	height:4em;
+	height:auto;
 }
 #file-file{
 	overflow:hidden;

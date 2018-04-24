@@ -27,17 +27,7 @@ define([
 		buttons: function(){
 			var that = this;
 		  document.getElementById("compile").onclick = function() {
-				window.run.interface.compiler.fancy();
-			};
-			document.getElementById("turn-cw").onclick = function() {
-				window.run.grid = window.run.iso.rotateCW(window.run.grid);
-				window.run.iso.render(window.run.grid);
-				window.run.interface.resizeIso();
-			};
-			document.getElementById("turn-ccw").onclick = function() {
-				window.run.grid = window.run.iso.rotateCCW(window.run.grid);
-				window.run.iso.render(window.run.grid);
-				window.run.interface.resizeIso();
+				window.run.interface.compiler.compile();
 			};
 			document.getElementById("undo").onclick = function() {
 				window.run.interface.editor.execCommand("undo");

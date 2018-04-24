@@ -1,10 +1,10 @@
 requirejs.config({
 	baseUrl: './script',
 	paths: {
-		mcscript: '../resources/library/mcscript',
 		crafty: '../resources/library/crafty',
 		jquery: '../resources/library/jquery',
 		jqueryresizable: '../resources/library/jquery-resizable',
+		mcscript: '../resources/library/mcscript',
 		domReady: '../resources/library/domReady'
 	},
 	packages: [{
@@ -16,16 +16,17 @@ requirejs.config({
 require([
 	'running',
 	'domReady',
+	'mcscript',
 	'interface',
 	'filetree',
-	'mcscript',
 	'compiler',
 	'jquery',
 	'jqueryresizable',
 	'codemirror',
 	'codemirror/mode/htmlmixed/htmlmixed'
 	],
-function (running, domReady){
+function (running, domReady, mcscript){
+	console.log(mcscript);
 	domReady(function(){
 		window.run = new running();
 	});
