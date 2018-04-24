@@ -29,8 +29,7 @@
 │       ├── 003
 │       │   ├── 001
 │       │   ├── 002
-│       │   ├── 004
-│       │   └── 009
+│       │   └── 004
 │       ├── 004
 │       │   ├── 001
 │       │   ├── 002
@@ -61,8 +60,6 @@
 │   ├── 1:1 -> ../mem
 │   ├── 1:11 -> ../kmsg
 │   ├── 116:1 -> ../snd/seq
-│   ├── 116:10 -> ../snd/controlC3
-│   ├── 116:11 -> ../snd/midiC3D0
 │   ├── 116:12 -> ../snd/controlC0
 │   ├── 116:13 -> ../snd/pcmC0D3p
 │   ├── 116:14 -> ../snd/pcmC0D7p
@@ -102,8 +99,6 @@
 │   ├── 13:80 -> ../input/event16
 │   ├── 13:81 -> ../input/event17
 │   ├── 1:4 -> ../port
-│   ├── 14:50 -> ../midi3
-│   ├── 14:57 -> ../dmmidi3
 │   ├── 14:66 -> ../midi4
 │   ├── 14:73 -> ../dmmidi4
 │   ├── 1:5 -> ../zero
@@ -115,7 +110,6 @@
 │   ├── 189:256 -> ../bus/usb/003/001
 │   ├── 189:257 -> ../bus/usb/003/002
 │   ├── 189:259 -> ../bus/usb/003/004
-│   ├── 189:264 -> ../bus/usb/003/009
 │   ├── 189:384 -> ../bus/usb/004/001
 │   ├── 189:385 -> ../bus/usb/004/002
 │   ├── 189:386 -> ../bus/usb/004/003
@@ -281,7 +275,6 @@
 │       ├── 7903d732-fd31-4b21-a894-411f7ad8749f -> ../../sdb1
 │       ├── 873e74f8-c249-4bcc-90e1-1d5ce002c993 -> ../../sdb2
 │       └── deb68c55-dbe9-45f0-b060-3c43f4c20a29 -> ../../sda3
-├── dmmidi3
 ├── dmmidi4
 ├── dri
 │   ├── by-path
@@ -342,7 +335,6 @@
 │   └── control
 ├── mem
 ├── memory_bandwidth
-├── midi3
 ├── midi4
 ├── mqueue
 ├── net
@@ -406,10 +398,8 @@
 ├── snd
 │   ├── by-id
 │   │   ├── usb-AKAI_professional_LLC_LPK25-00 -> ../controlC4
-│   │   ├── usb-Logitech_Logitech_USB_Microphone-00 -> ../controlC2
-│   │   └── usb-___WORLDE_easy_control-00 -> ../controlC3
+│   │   └── usb-Logitech_Logitech_USB_Microphone-00 -> ../controlC2
 │   ├── by-path
-│   │   ├── pci-0000:25:00.0-usb-0:1.1:1.0 -> ../controlC3
 │   │   ├── pci-0000:25:00.0-usb-0:1.2:1.0 -> ../controlC4
 │   │   ├── pci-0000:28:00.1 -> ../controlC0
 │   │   ├── pci-0000:29:00.3-usb-0:4:1.0 -> ../controlC2
@@ -417,11 +407,9 @@
 │   ├── controlC0
 │   ├── controlC1
 │   ├── controlC2
-│   ├── controlC3
 │   ├── controlC4
 │   ├── hwC0D0
 │   ├── hwC1D0
-│   ├── midiC3D0
 │   ├── midiC4D0
 │   ├── pcmC0D3p
 │   ├── pcmC0D7p
@@ -538,4 +526,4 @@
 ├── vhost-vsock
 └── zero
 
-37 directories, 501 files
+37 directories, 489 files
